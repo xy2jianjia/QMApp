@@ -14,6 +14,7 @@
 		29331249234DC39A0017BFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29331248234DC39A0017BFAA /* Assets.xcassets */; };
 		2933124C234DC39A0017BFAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2933124A234DC39A0017BFAA /* LaunchScreen.storyboard */; };
 		2933124F234DC39A0017BFAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2933124E234DC39A0017BFAA /* main.m */; };
+		29331258234DC51C0017BFAA /* sss.m in Sources */ = {isa = PBXBuildFile; fileRef = 29331257234DC51C0017BFAA /* sss.m */; };
 		E35F1BD0D7C4CB7B0BA12FBB /* Pods_QMApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E102C1041FC20209CC46B2F2 /* Pods_QMApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		2933124B234DC39A0017BFAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2933124D234DC39A0017BFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2933124E234DC39A0017BFAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29331256234DC51C0017BFAA /* sss.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sss.h; sourceTree = "<group>"; };
+		29331257234DC51C0017BFAA /* sss.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sss.m; sourceTree = "<group>"; };
 		62D75333558D50232A98BA04 /* Pods-QMApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QMApp.release.xcconfig"; path = "Target Support Files/Pods-QMApp/Pods-QMApp.release.xcconfig"; sourceTree = "<group>"; };
 		B5EBB0B5992E966C201CB06C /* Pods-QMApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QMApp.debug.xcconfig"; path = "Target Support Files/Pods-QMApp/Pods-QMApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E102C1041FC20209CC46B2F2 /* Pods_QMApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QMApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +53,7 @@
 		29331230234DC3990017BFAA = {
 			isa = PBXGroup;
 			children = (
+				29331255234DC5130017BFAA /* Modules */,
 				2933123B234DC3990017BFAA /* QMApp */,
 				2933123A234DC3990017BFAA /* Products */,
 				CAA3A2A237FDE7A2D097EAC2 /* Pods */,
@@ -83,6 +87,15 @@
 			path = QMApp;
 			sourceTree = "<group>";
 		};
+		29331255234DC5130017BFAA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				29331256234DC51C0017BFAA /* sss.h */,
+				29331257234DC51C0017BFAA /* sss.m */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		C8FF6453D4CCCA329A45839E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +110,6 @@
 				B5EBB0B5992E966C201CB06C /* Pods-QMApp.debug.xcconfig */,
 				62D75333558D50232A98BA04 /* Pods-QMApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -200,6 +212,7 @@
 				29331244234DC3990017BFAA /* ViewController.m in Sources */,
 				2933123E234DC3990017BFAA /* AppDelegate.m in Sources */,
 				2933124F234DC39A0017BFAA /* main.m in Sources */,
+				29331258234DC51C0017BFAA /* sss.m in Sources */,
 				29331241234DC3990017BFAA /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
