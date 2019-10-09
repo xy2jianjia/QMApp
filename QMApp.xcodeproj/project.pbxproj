@@ -14,6 +14,7 @@
 		29331249234DC39A0017BFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29331248234DC39A0017BFAA /* Assets.xcassets */; };
 		2933124C234DC39A0017BFAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2933124A234DC39A0017BFAA /* LaunchScreen.storyboard */; };
 		2933124F234DC39A0017BFAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2933124E234DC39A0017BFAA /* main.m */; };
+		E35F1BD0D7C4CB7B0BA12FBB /* Pods_QMApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E102C1041FC20209CC46B2F2 /* Pods_QMApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,9 @@
 		2933124B234DC39A0017BFAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2933124D234DC39A0017BFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2933124E234DC39A0017BFAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		62D75333558D50232A98BA04 /* Pods-QMApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QMApp.release.xcconfig"; path = "Target Support Files/Pods-QMApp/Pods-QMApp.release.xcconfig"; sourceTree = "<group>"; };
+		B5EBB0B5992E966C201CB06C /* Pods-QMApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QMApp.debug.xcconfig"; path = "Target Support Files/Pods-QMApp/Pods-QMApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E102C1041FC20209CC46B2F2 /* Pods_QMApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QMApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35F1BD0D7C4CB7B0BA12FBB /* Pods_QMApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				2933123B234DC3990017BFAA /* QMApp */,
 				2933123A234DC3990017BFAA /* Products */,
+				CAA3A2A237FDE7A2D097EAC2 /* Pods */,
+				C8FF6453D4CCCA329A45839E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,24 @@
 			path = QMApp;
 			sourceTree = "<group>";
 		};
+		C8FF6453D4CCCA329A45839E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E102C1041FC20209CC46B2F2 /* Pods_QMApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAA3A2A237FDE7A2D097EAC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5EBB0B5992E966C201CB06C /* Pods-QMApp.debug.xcconfig */,
+				62D75333558D50232A98BA04 /* Pods-QMApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29331252234DC39A0017BFAA /* Build configuration list for PBXNativeTarget "QMApp" */;
 			buildPhases = (
+				1FA986C3724A0B814987539A /* [CP] Check Pods Manifest.lock */,
 				29331235234DC3990017BFAA /* Sources */,
 				29331236234DC3990017BFAA /* Frameworks */,
 				29331237234DC3990017BFAA /* Resources */,
@@ -140,6 +166,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FA986C3724A0B814987539A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QMApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29331235234DC3990017BFAA /* Sources */ = {
@@ -287,35 +338,39 @@
 		};
 		29331253234DC39A0017BFAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5EBB0B5992E966C201CB06C /* Pods-QMApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z5254KXA39;
 				INFOPLIST_FILE = QMApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = qm.QMApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		29331254234DC39A0017BFAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D75333558D50232A98BA04 /* Pods-QMApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z5254KXA39;
 				INFOPLIST_FILE = QMApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = qm.QMApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

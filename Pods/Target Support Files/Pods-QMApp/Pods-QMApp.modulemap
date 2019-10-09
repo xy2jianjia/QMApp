@@ -1,0 +1,6 @@
+framework module Pods_QMApp {
+  umbrella header "Pods-QMApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
